@@ -4,37 +4,15 @@
     <title>Cart Quantity</title>
   </head>
   <body>
-
-    <P>Cart Quantity</P>
-    <button onclick="
-    let tax = cost+(cost* 0.1);
-    console.log(`cost of food: ${tax} `);
-    ">cost of food: </button>
-
-    <button onclick="
-      cost +=5;
-      console.log (`Cart quanity: ${cost} `);
-    ">coffee:($5)</button>
-
-    <button onclick="
-      cost += 3;
-      console.log (`Cart quanity: ${cost} `);
-    "> bagels:($3) </button>
-
-<button onclick="
-      cost += 9;
-      console.log (`Cart quanity: ${cost} `);
-    "> soup:($9) </button>
-
-    <button onclick="
-      cost = 0;
-      console.log ('Cart was reset');
-      console.log(`Cart quanity: ${cost}`);
-    ">Reset Cart</button>
-
     <script>
-      let cost = 0;
-      
+      const cost = 5 + 2 * 3 + 9;
+      console.log(`Cost of food: $${cost}`);
+
+      const tax = cost * 0.1;
+      console.log(`Tax: $${tax}`);
+
+      const totalCost = cost + tax;
+      console.log(`Total cost: $${totalCost}`);
     </script>
   </body>
 </html>
